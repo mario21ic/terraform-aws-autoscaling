@@ -17,11 +17,9 @@ variable "name" {
 //variable "tag_start_stop_value" {
 //  description = "Value of tag start stop"
 //}
-//variable "launch_configuration_name" {
-//  description = "Launch configuration name"
-//}
 
-variable "launch_template_id" {}
+variable "launch_configuration_name" {}
+//variable "launch_template_id" {}
 
 //variable "sns_topic_arn" {
 //  default = ""
