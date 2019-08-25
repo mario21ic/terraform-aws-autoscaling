@@ -5,11 +5,11 @@ data "template_file" "tag_codedeploy" {
 resource "aws_autoscaling_group" "my_asg" {
   name                 = "${var.env}-asg-${var.name}"
 
-  launch_configuration = "${var.launch_configuration_name}"
-  //launch_template = {
-  //  id = "${var.launch_template_id}"
-  //  version = "$$Latest"
-  //}
+  //launch_configuration = "${var.launch_configuration_name}"
+  launch_template = {
+    id = "${var.launch_template_id}"
+    version = "$$Latest"
+  }
 
   # Private subnets
   vpc_zone_identifier = ["${var.subnet_ids}"]

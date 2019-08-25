@@ -18,8 +18,8 @@ variable "name" {
 //  description = "Value of tag start stop"
 //}
 
-variable "launch_configuration_name" {}
-//variable "launch_template_id" {}
+//variable "launch_configuration_name" {}
+variable "launch_template_id" {}
 
 //variable "sns_topic_arn" {
 //  default = ""
